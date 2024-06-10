@@ -1,0 +1,3 @@
+[submodule "lib/pachyderm-fc-core"]
+	path = lib/pachyderm-fc-core
+	url = git@github.com:Rose-Rocketry/pachyderm-fc-core.git
