@@ -3,8 +3,10 @@
 #include <fstream>
 #include <ios>
 
-bool FileConfig::open(const char* filename) {
-    std::ifstream data_in(filename, std::ios_base::in);
+FileConfig::FileConfig(std::string rootdir): dir(rootdir) {}
+
+bool FileConfig::open(const char *filename) {
+    std::ifstream data_in(dir + "/" + filename, std::ios_base::in);
     if(data_in.is_open()) {
         source.parse(data_in);
         return true;
