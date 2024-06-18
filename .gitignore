@@ -1,4 +1,6 @@
-test_files/flash.bin
+test_files/*.bin
+test_files/sdcard/**
+!test_files/sdcard/pachyderm.cfg
 
 .pio
 .vscode/.browse.c_cpp.db*
